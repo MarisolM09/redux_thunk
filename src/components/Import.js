@@ -5,11 +5,11 @@ import Button from '@mui/material/Button';
 const Import = (props) => {
 
     return (
-     <>
+     <div className="import-btn">
         <Button variant="contained" color="primary" onClick={props.fetchMakes}>Import</Button>
-        <h2>Count:{props.makes.length}</h2>
-       <CustomTable makes={props.makes}/>
-     </>
+       
+       <CustomTable makes={props.makes} deleteMake={props.deleteMake}/>
+     </div>
     )
 }
 
